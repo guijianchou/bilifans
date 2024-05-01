@@ -6,7 +6,8 @@ import time
 app = Flask(__name__)
 
 fans_count = 0
-uid = '552024939'
+#此处自行添加修改uid
+uid = 'UID'
 uid_name = ''
 
 headers={
@@ -31,7 +32,7 @@ threading.Thread(target=get_fans_count).start()
 
 @app.route('/')
 def index():
-    return render_template('fans_1.html', uid_name=uid_name)
+    return render_template('fans.html', uid_name=uid_name)
 
 @app.route('/update')
 def update():
