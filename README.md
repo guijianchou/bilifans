@@ -1,1 +1,3 @@
-自行修改uid即可
+默认使用flask库，每5s刷新一次数据，以折线图形式展示到网页上
+app.py代码中自行修改uid即可。
+uid对应的name会由get_uid_name由bilibili的api获取
